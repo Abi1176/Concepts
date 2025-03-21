@@ -4,13 +4,16 @@ The init parameter controls how the model starts making predictions before boost
 By default (init=None)
 
 The model starts with a very basic guess: it predicts class probabilities based on the training data distribution (like a "DummyEstimator").
+
 If init is set to another model (an estimator)
 
 You can provide a machine learning model (like LogisticRegression()), and boosting will start from there instead of the default guess.
 The model you choose must support fit() and predict_proba().
+
 If init='zero'
 
 The model starts with all predictions set to zero, meaning boosting has to build everything from scratch.
+
 Real-Life Example
 Think of learning to play chess:
 
@@ -20,6 +23,7 @@ Think of learning to play chess:
 
 Code Examples
 python
+
 from sklearn.ensemble import GradientBoostingClassifier
 from sklearn.linear_model import LogisticRegression
 
