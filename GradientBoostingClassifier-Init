@@ -1,3 +1,8 @@
+# What is Gradient Boosting?
+Gradient Boosting is a machine learning technique used for classification and regression tasks. 
+It builds multiple decision trees one at a time, where each tree tries to correct the mistakes of the previous ones. This way, the model improves step by step.
+
+
 # Understanding init in GradientBoostingClassifier
 The init parameter controls how the model starts making predictions before boosting begins.
 
